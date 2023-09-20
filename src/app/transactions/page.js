@@ -1,20 +1,17 @@
-import AppLayout from '@/pages/AppLayout';
 import Sidebar from '@/components/Sidebar';
-import FetchData from '@/components/FetchData';
+import AppLayout from '@/pages/AppLayout';
 
-const Home = () => {
+const Transactions = () => {
   return (
     <div className="flex justify-between items-start min-h-screen w-full">
       <div className="">
         <Sidebar />
       </div>
       <main className="w-5/6 text-black bg-neutral-50 min-h-screen">
-        <AppLayout>
-          <FetchData />
-        </AppLayout>
+        <AppLayout />
       </main>
     </div>
   );
 };
 
-export default Home;
+export default Transactions;
